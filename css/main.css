@@ -1,0 +1,103 @@
+body {
+    background-color: dodgerblue;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 50%;
+    background-color: dimgrey;
+    position:absolute;
+    z-index: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 18px;
+}
+
+img {
+    width: inherit;
+    height: inherit;
+    display: none;  
+    transition: 500ms;
+}
+
+.col {
+    margin: 20px; 
+    height: 128px;
+    border: solid 1px #111;
+    background-color: #00ffbf;
+} 
+
+.row {
+    height: 164px;
+}
+
+.button-comenzar {
+    align-self: center;
+    padding: 8px;
+}
+
+.row>* {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+p {
+    text-align: center;
+    font-family: inherit;
+    font-size: 1.5rem;
+}
+
+#timer {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+#timer p {
+    display: inline;
+}
+
+.card-body {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+}
+
+i {
+    color: red;
+    font-size: 4rem;
+}
+
+.card {
+    display: none; 
+}
+
+.card-title {
+    margin-top: 26px;
+    margin-bottom: 18px;
+}
+
+.card-text {
+    color: black;
+    margin-bottom: 28px;
+}
+
+#btn-reset {
+    width: 67%;
+    margin-bottom: 17px;
+}
+
+
