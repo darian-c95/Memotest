@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="185pt" height="123pt" viewBox="0 0 185 123" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<g id="#d91023ff">
+<path fill="#d91023" opacity="1.00" d=" M 0.00 0.00 L 61.67 0.00 C 61.67 41.00 61.67 82.00 61.67 123.00 L 0.00 123.00 L 0.00 0.00 Z" />
+<path fill="#d91023" opacity="1.00" d=" M 123.33 0.00 L 185.00 0.00 L 185.00 123.00 L 123.33 123.00 C 123.33 82.00 123.33 41.00 123.33 0.00 Z" />
+</g>
+<g id="#ffffffff">
+<path fill="#ffffff" opacity="1.00" d=" M 61.67 0.00 L 123.33 0.00 C 123.33 41.00 123.33 82.00 123.33 123.00 L 61.67 123.00 C 61.67 82.00 61.67 41.00 61.67 0.00 Z" />
+</g>
+</svg>
