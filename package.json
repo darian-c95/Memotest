@@ -4,7 +4,8 @@
   "description": "Juego de memotest correspondiente al curso r/argentinaprograma",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-dev": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/darian-c95/Memotest#readme",
   "dependencies": {
     "bootstrap": "^5.0.2"
+  },
+  "devDependencies": {
+    "cypress": "^8.0.0"
   }
 }

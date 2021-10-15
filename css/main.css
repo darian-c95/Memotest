@@ -1,10 +1,10 @@
 body {
-    background-color: dodgerblue;
+    background-color: #22223B;
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
-
+    color: #fff;
 }
 
 *, ::after, ::before {
@@ -12,16 +12,20 @@ body {
 }
 
 .container {
-    width: 50%;
-    background-color: dimgrey;
+    background-color: #4A4E69;
+    height: 100vh;
     position:absolute;
+    width: 50%;
     z-index: 0;
 }
 
 h1 {
-    text-align: center;
-    margin-top: 35px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 62px;
     margin-bottom: 18px;
+    margin-top: 35px;
+    text-align: center;
+    
 }
 
 img {
@@ -32,10 +36,11 @@ img {
 }
 
 .col {
-    margin: 20px; 
-    height: 128px;
     border: solid 1px #111;
-    background-color: #00ffbf;
+    background-color: #0471A6;
+    border-radius: 5px;
+    height: 128px;
+    margin: 20px; 
 } 
 
 .row {
