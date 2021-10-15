@@ -19,16 +19,16 @@ let arrayBanderas = [banderaArgentina, banderaPeru, banderaChile, banderaUruguay
 let arrayIndice = [];
 
 for(let i = 0; i < 16; i++) {
-
     let indice = Math.floor(Math.random() * 16); 
     
     if(arrayIndice.includes(indice) === false) { 
-            arrayIndice.push(indice);
-            arrayBanderas.splice(indice, 1, arrayBanderas[indice]);
-            let $div = document.querySelector(`#cuadro-${indice + 1}`);
-            let $img = document.createElement("img");
-            $img.src = arrayBanderas[i];
-            $div.appendChild($img);
+        arrayIndice.push(indice);
+        arrayBanderas.splice(indice, 1, arrayBanderas[indice]);
+        let $div = document.querySelector(`#cuadro-${indice + 1}`);
+        let $img = document.createElement("img");
+        $img.src = arrayBanderas[i];
+        $div.appendChild($img); 
+        document.querySelector(`#cuadro-${i + 1}`).className = `col ${i}`;
         } else {
             i = i - 1;
         }                                     
