@@ -16,7 +16,7 @@ let banderaParaguay = ['img/300px-Flag_of_Paraguay_(1988–1990).svg.png', 'para
 let banderaColombia = ['img/55cf080c74c4ed02aaaba10fab30297b.jpg', 'colombia'];
 let banderaBolivia = ['img/264px-Flag_of_Bolivia.svg.png', 'bolivia'];
 let arrayBanderas = [banderaArgentina, banderaPeru, banderaChile, banderaUruguay, banderaBrasil, banderaParaguay, banderaColombia, banderaBolivia, banderaArgentina, banderaPeru, banderaChile, banderaUruguay, banderaBrasil, banderaParaguay, banderaColombia, banderaBolivia];
-console.log(arrayBanderas.length)
+
 let arrayIndice = [];
 
 for(let i = 0; i < arrayBanderas.length; i++) {
@@ -27,10 +27,9 @@ for(let i = 0; i < arrayBanderas.length; i++) {
         // arrayBanderas.splice(indice, 1, arrayBanderas[indice]);
         let $div = document.querySelector(`#cuadro-${indice + 1}`);
         let $img = document.createElement("img");
-        $img.src = arrayBanderas[i];
-        console.log(arrayBanderas[i])
+        $img.src = arrayBanderas[i][0]; 
         $div.appendChild($img); 
-        document.querySelector(`#cuadro-${i + 1}`).className = `col ${i}`;
+        document.querySelector(`#cuadro-${indice + 1}`).className = `col ${arrayBanderas[i][1]}`;
         } else {
             i = i - 1;
         }                                     
