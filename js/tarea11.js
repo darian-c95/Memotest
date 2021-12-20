@@ -7,8 +7,8 @@ const $tablero = document.querySelector('#cont-padre');
 
 function mezclarBanderas() {
 
-let banderaUruguay = 'img/270px-Flag_of_Uruguay.svg.png';
-let banderaArgentina = 'img/1024px-Flag_of_Argentina.svg.png';
+let banderaUruguay = ['img/270px-Flag_of_Uruguay.svg.png', 'uruguay'];
+let banderaArgentina = ['img/1024px-Flag_of_Argentina.svg.png', 'argentina'];
 let banderaPeru = 'img/73ed68f4b56bfad49d143dbc23b04083.jpg';
 let banderaChile = 'img/cl.png';
 let banderaBrasil = 'img/Flag_of_Brazil.svg.webp';
