@@ -9,12 +9,12 @@ function mezclarBanderas() {
 
 let banderaUruguay = ['img/270px-Flag_of_Uruguay.svg.png', 'uruguay'];
 let banderaArgentina = ['img/1024px-Flag_of_Argentina.svg.png', 'argentina'];
-let banderaPeru = 'img/73ed68f4b56bfad49d143dbc23b04083.jpg';
-let banderaChile = 'img/cl.png';
-let banderaBrasil = 'img/Flag_of_Brazil.svg.webp';
-let banderaParaguay = 'img/300px-Flag_of_Paraguay_(1988–1990).svg.png';
-let banderaColombia = 'img/55cf080c74c4ed02aaaba10fab30297b.jpg';
-let banderaBolivia = 'img/264px-Flag_of_Bolivia.svg.png';
+let banderaPeru = ['img/73ed68f4b56bfad49d143dbc23b04083.jpg', 'peru'];
+let banderaChile = ['img/cl.png', 'chile'];
+let banderaBrasil = ['img/Flag_of_Brazil.svg.webp', 'brasil'];
+let banderaParaguay = ['img/300px-Flag_of_Paraguay_(1988–1990).svg.png', 'paraguay'];
+let banderaColombia = ['img/55cf080c74c4ed02aaaba10fab30297b.jpg', 'colombia'];
+let banderaBolivia = ['img/264px-Flag_of_Bolivia.svg.png', 'bolivia'];
 let arrayBanderas = [banderaArgentina, banderaPeru, banderaChile, banderaUruguay, banderaBrasil, banderaParaguay, banderaColombia, banderaBolivia, banderaArgentina, banderaPeru, banderaChile, banderaUruguay, banderaBrasil, banderaParaguay, banderaColombia, banderaBolivia];
 console.log(arrayBanderas.length)
 let arrayIndice = [];
@@ -28,6 +28,7 @@ for(let i = 0; i < arrayBanderas.length; i++) {
         let $div = document.querySelector(`#cuadro-${indice + 1}`);
         let $img = document.createElement("img");
         $img.src = arrayBanderas[i];
+        console.log(arrayBanderas[i])
         $div.appendChild($img); 
         document.querySelector(`#cuadro-${i + 1}`).className = `col ${i}`;
         } else {
