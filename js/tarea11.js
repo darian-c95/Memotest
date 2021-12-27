@@ -24,7 +24,7 @@ for(let i = 0; i < arrayBanderas.length; i++) {
     
     if(arrayIndice.includes(indice) === false) { 
         arrayIndice.push(indice);
-        // arrayBanderas.splice(indice, 1, arrayBanderas[indice]);
+        
         let $div = document.querySelector(`#cuadro-${indice + 1}`);
         let $img = document.createElement("img");
         $img.src = arrayBanderas[i][0]; 
@@ -136,6 +136,4 @@ timer()
 document.querySelector('#btn-reset').onclick = function(e) {
     location.reload();
 }
-
-
  
