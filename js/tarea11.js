@@ -7,28 +7,29 @@ const $tablero = document.querySelector('#cont-padre');
 
 function mezclarBanderas() {
 
-let banderaUruguay = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/270px-Flag_of_Uruguay.svg.png';
-let banderaArgentina = 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/1024px-Flag_of_Argentina.svg.png';
-let banderaPeru = 'https://i.pinimg.com/474x/73/ed/68/73ed68f4b56bfad49d143dbc23b04083.jpg';
-let banderaChile = 'https://www.banderas-mundo.es/data/flags/w580/cl.png';
-let banderaBrasil = 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/300px-Flag_of_Brazil.svg.png';
-let banderaParaguay = 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Flag_of_Paraguay_%281988%E2%80%931990%29.svg/300px-Flag_of_Paraguay_%281988%E2%80%931990%29.svg.png';
-let banderaColombia = 'https://i.pinimg.com/564x/55/cf/08/55cf080c74c4ed02aaaba10fab30297b.jpg';
-let banderaBolivia = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/264px-Flag_of_Bolivia.svg.png';
+let banderaUruguay = ['img/270px-Flag_of_Uruguay.svg.png', 'uruguay'];
+let banderaArgentina = ['img/1024px-Flag_of_Argentina.svg.png', 'argentina'];
+let banderaPeru = ['img/73ed68f4b56bfad49d143dbc23b04083.jpg', 'peru'];
+let banderaChile = ['img/cl.png', 'chile'];
+let banderaBrasil = ['img/Flag_of_Brazil.svg.webp', 'brasil'];
+let banderaParaguay = ['img/300px-Flag_of_Paraguay_(1988–1990).svg.png', 'paraguay'];
+let banderaColombia = ['img/55cf080c74c4ed02aaaba10fab30297b.jpg', 'colombia'];
+let banderaBolivia = ['img/264px-Flag_of_Bolivia.svg.png', 'bolivia'];
 let arrayBanderas = [banderaArgentina, banderaPeru, banderaChile, banderaUruguay, banderaBrasil, banderaParaguay, banderaColombia, banderaBolivia, banderaArgentina, banderaPeru, banderaChile, banderaUruguay, banderaBrasil, banderaParaguay, banderaColombia, banderaBolivia];
+
 let arrayIndice = [];
 
-for(let i = 0; i < 16; i++) {
-    let indice = Math.floor(Math.random() * 16); 
+for(let i = 0; i < arrayBanderas.length; i++) {
+    let indice = Math.floor(Math.random() * arrayBanderas.length); 
     
     if(arrayIndice.includes(indice) === false) { 
         arrayIndice.push(indice);
-        arrayBanderas.splice(indice, 1, arrayBanderas[indice]);
+        
         let $div = document.querySelector(`#cuadro-${indice + 1}`);
         let $img = document.createElement("img");
-        $img.src = arrayBanderas[i];
+        $img.src = arrayBanderas[i][0]; 
         $div.appendChild($img); 
-        document.querySelector(`#cuadro-${i + 1}`).className = `col ${i}`;
+        document.querySelector(`#cuadro-${indice + 1}`).className = `col ${arrayBanderas[i][1]}`;
         } else {
             i = i - 1;
         }                                     
@@ -91,7 +92,7 @@ function clickCuadros() {
 
 function cartelVictoria() {
     document.querySelector('.card').style.display = 'initial';
-    document.querySelector('#title-alert').innerText = 'Ganaste';
+    document.querySelector('#title-alert').innerText = 'Ganaste!';
     document.querySelector('#icon').className = 'fas fa-thumbs-up';
     document.querySelector('i').style.color = '#15AABF';
 }
@@ -135,6 +136,4 @@ timer()
 document.querySelector('#btn-reset').onclick = function(e) {
     location.reload();
 }
-
-
  
