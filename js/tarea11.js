@@ -27,6 +27,7 @@ for(let i = 0; i < arrayBanderas.length; i++) {
         
         let $div = document.querySelector(`#cuadro-${indice + 1}`);
         let $img = document.createElement("img");
+        
         $img.src = arrayBanderas[i][0]; 
         $div.appendChild($img); 
         document.querySelector(`#cuadro-${indice + 1}`).className = `col ${arrayBanderas[i][1]}`;

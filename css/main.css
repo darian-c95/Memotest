@@ -21,7 +21,7 @@ body {
 
 h1 {
     font-family: 'Luckiest Guy', cursive;
-    font-size: 62px;
+    font-size: 4rem;
     margin-bottom: 18px;
     margin-top: 35px;
     text-align: center;
@@ -29,10 +29,11 @@ h1 {
 }
 
 img {
-    width: inherit;
-    height: inherit;
     display: none;  
+    height: inherit;
     transition: 500ms;
+    width: 100%;
+    /* height: 100%; */
 }
 
 .col {
@@ -106,4 +107,16 @@ i {
     margin-bottom: 17px;
 }
 
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 1300px) {
+    img {
+        height: max-content;
+    }
+}
 

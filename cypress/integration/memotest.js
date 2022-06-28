@@ -92,5 +92,3 @@ function obtenerParesDeCuadros(cuadros) {
     
     return pares;
 }
-
-// Escribir prueba para cuando: 1. Se termina el juego, se gana/pierde y el contador no tiene que seguir. 2. Cuando apretamos reset el contador vuelve a cero y las banseras se ocultan
